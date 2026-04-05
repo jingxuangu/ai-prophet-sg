@@ -1,0 +1,1222 @@
+
+============================================================
+Tick #1  id=2026-04-05T05:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=3.5% edge=+0.0% ev=1] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=1] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=1.5% edge=+0.0% ev=1] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=97.5% edge=+0.0% ev=2] Will the US government be shut down for at least 35 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=9.5% edge=+0.0% ev=1] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=3.5% edge=+0.0% ev=1] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=1.5% edge=+0.0% ev=1] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=4.0% edge=+0.0% ev=1] Will Pete Buttigieg be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=49.5% edge=+0.0% ev=1] Will Democrats win the U.S. Senate in 2026?
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=52.0% edge=+1.0% ev=1] Will Republicans win the U.S. Senate in 2026?
+       → TRADE: BUY YES $50
+  17. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=8.5% edge=+0.0% ev=1] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=6.0% edge=+1.0% ev=2] Will the Detroit win the 2026 Pro Basketball Finals?
+       → TRADE: BUY YES $50
+  20. [p=2.0% edge=+0.0% ev=1] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+Trades executed (2 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:CONTROLS-2026-R
+  BUY YES  shares=50.000000  market=kalshi:KXNBA-26-DET
+
+============================================================
+Tick #2  id=2026-04-05T05:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=99.0% edge=+1.0% ev=3] Will the US government be shut down for at least 35 days between Feb 7
+       → TRADE: BUY YES $50
+   3. [p=16.5% edge=+0.0% ev=0] Will the San Antonio win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.0% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=5.0% edge=+1.0% ev=1] Will Pete Buttigieg be the Democratic Presidential nominee in 2028?
+       → TRADE: BUY YES $50
+   6. [p=6.5% edge=+0.0% ev=1] Will the Cleveland win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=48.0% edge=+1.0% ev=2] Will Democrats win the U.S. Senate in 2026?
+       → TRADE: BUY NO $50
+   9. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=8.5% edge=+0.0% ev=1] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=2.0% edge=+0.0% ev=1] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=17.5% edge=+0.0% ev=1] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=40.0% edge=+2.0% ev=1] Will Benjamin Netanyahu leave Prime Minister of Israel before Jan 1, 2
+       → TRADE: BUY YES $50
+  16. [p=20.0% edge=+1.0% ev=1] Will Bitcoin be above $100000 by June 1, 2026 at 12:00AM ET?
+       → TRADE: BUY YES $50
+  17. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=25.0% edge=+0.0% ev=1] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=3.5% edge=+0.0% ev=1] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+Trades executed (5 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:KXGOVTSHUTLENGTH-26FEB07-G35
+  BUY YES  shares=50.000000  market=kalshi:KXPRESNOMD-28-PB
+  BUY NO  shares=50.000000  market=kalshi:CONTROLS-2026-D
+  BUY YES  shares=50.000000  market=kalshi:KXLEADERSOUT-27JAN01-BNETISR
+  BUY YES  shares=50.000000  market=kalshi:KXBTCMAX100-26-MAY
+
+============================================================
+Tick #3  id=2026-04-05T05:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=35.0% edge=+5.0% ev=2] Will Gavin Newsom be the Democratic Presidential nominee in 2028?
+       → TRADE: BUY YES $50
+   2. [p=6.5% edge=+0.0% ev=1] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=6.5% edge=+0.0% ev=1] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=22.0% edge=+3.0% ev=1] Will the United States recognize Reza Pahlavi as the leader of Iran in
+       → TRADE: BUY NO $50
+   6. [p=7.0% edge=+0.0% ev=1] Will Josh Shapiro be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=20.0% edge=+3.0% ev=2] Will the San Antonio win the 2026 Pro Basketball Finals?
+       → TRADE: BUY YES $50
+   8. [p=43.5% edge=+5.5% ev=2] Will J.D. Vance be the nominee for the Presidency for the Republican p
+       → TRADE: BUY YES $100
+   9. [p=6.5% edge=+0.0% ev=1] Will the Cleveland win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=37.5% edge=+5.5% ev=2] Will there be a recession in 2026?
+       → TRADE: BUY YES $100
+  11. [p=27.0% edge=+0.0% ev=1] Will Marco Rubio be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=15.0% edge=+5.0% ev=2] Will Man City win the English Premier League?
+       → TRADE: BUY YES $50
+  13. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=17.5% edge=+0.0% ev=1] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=88.5% edge=+0.0% ev=1] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=25.0% edge=+0.0% ev=1] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=3.5% edge=+0.0% ev=1] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=8.5% edge=+0.0% ev=1] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=45.0% edge=+0.0% ev=1] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+Trades executed (6 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:KXPRESNOMD-28-GN
+  BUY NO  shares=50.000000  market=kalshi:KXRECOGPERSONIRAN-26
+  BUY YES  shares=50.000000  market=kalshi:KXNBA-26-SAS
+  BUY YES  shares=100.000000  market=kalshi:KXPRESNOMR-28-JDV
+  BUY YES  shares=100.000000  market=kalshi:KXRECSSNBER-26
+  BUY YES  shares=50.000000  market=kalshi:KXPREMIERLEAGUE-26-MCI
+
+============================================================
+Tick #4  id=2026-04-05T06:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=3.0% edge=+0.0% ev=1] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=1] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=1] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=2.0% edge=+0.0% ev=1] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=2] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=1] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=1] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=1] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=1] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=1] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.0% edge=+1.0% ev=1] Will Josh Shapiro be the Democratic Presidential nominee in 2028?
+       → TRADE: BUY YES $50
+  15. [p=8.5% edge=+0.0% ev=1] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=3.5% edge=+0.0% ev=1] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=28.0% edge=+1.0% ev=1] Will Marco Rubio be the nominee for the Presidency for the Republican 
+       → TRADE: BUY YES $50
+  20. [p=88.0% edge=+0.0% ev=2] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+Trades executed (2 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:KXPRESNOMD-28-JS
+  BUY YES  shares=50.000000  market=kalshi:KXPRESNOMR-28-MR
+
+============================================================
+Tick #5  id=2026-04-05T06:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=3.0% edge=+0.0% ev=1] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=1] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=1] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=2] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=2] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=1.5% edge=+0.0% ev=1] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=17.5% edge=+0.0% ev=1] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=1.5% edge=+0.0% ev=1] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=9.5% edge=+0.0% ev=1] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=8.5% edge=+0.0% ev=1] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=1.5% edge=+0.0% ev=2] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #6  id=2026-04-05T06:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=1] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.0% edge=+0.0% ev=2] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=8.0% edge=+1.0% ev=2] Will the Cleveland win the 2026 Pro Basketball Finals?
+       → TRADE: BUY YES $50
+   6. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=8.5% edge=+0.0% ev=1] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=2.0% edge=+0.0% ev=1] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=17.5% edge=+0.0% ev=1] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=1] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=1] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=90.0% edge=+3.0% ev=2] Will Donald Trump visit China before Jan 1, 2027?
+       → TRADE: BUY YES $50
+  18. [p=45.0% edge=+0.0% ev=1] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=24.0% edge=+1.0% ev=2] Will Bitcoin be above $100000 by July 1, 2026 at 12:00AM ET?
+       → TRADE: BUY NO $50
+  20. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+Trades executed (3 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:KXNBA-26-CLE
+  BUY YES  shares=50.000000  market=kalshi:KXTRUMPCOUNTRIES-27JAN01-CHI
+  BUY NO  shares=50.000000  market=kalshi:KXBTCMAX100-26-JUNE
+
+============================================================
+Tick #7  id=2026-04-05T06:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=1] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=1] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=8.5% edge=+0.0% ev=1] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.0% edge=+0.0% ev=1] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=1] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=9.5% edge=+0.0% ev=1] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=88.5% edge=+0.0% ev=1] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=24.5% edge=+0.0% ev=1] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=3.5% edge=+0.0% ev=1] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=1] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=23.0% edge=+1.0% ev=1] Will Bayern Munich win the Champions League Winner?
+       → TRADE: BUY YES $50
+  16. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=35.0% edge=+5.0% ev=2] Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?
+       → TRADE: BUY NO $100
+  18. [p=48.0% edge=+0.0% ev=2] Will the US government be shut down for at least 60 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=48.5% edge=+0.0% ev=1] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=74.5% edge=+5.5% ev=2] Will Paramount's takeover of Warner Brothers succeed Before July 2027?
+       → TRADE: BUY NO $100
+────────────────────────────────────────────────────────────
+Trades executed (3 accepted, 0 rejected):
+  BUY YES  shares=50.000000  market=kalshi:KXUCL-26-BMU
+  BUY NO  shares=100.000000  market=kalshi:KXBTCMAXY-26DEC31-99999.99
+  BUY NO  shares=100.000000  market=kalshi:KXTAKEOVERACQWB-27JUN30-PSKY
+
+============================================================
+Tick #8  id=2026-04-05T07:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=3.0% edge=+0.0% ev=1] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=1] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=1] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=1] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=2] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=1] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=1] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=1] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=1] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=1] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.0% edge=+0.0% ev=2] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=88.0% edge=+0.0% ev=1] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=42.5% edge=+5.5% ev=2] Will the US government be shut down for at least 60 days between Feb 7
+       → TRADE: BUY NO $100
+────────────────────────────────────────────────────────────
+Trades executed (1 accepted, 0 rejected):
+  BUY NO  shares=100.000000  market=kalshi:KXGOVTSHUTLENGTH-26FEB07-G60
+
+============================================================
+Tick #9  id=2026-04-05T07:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=3.0% edge=+0.0% ev=1] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=1] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=1] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=2] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=6.5% edge=+0.0% ev=1] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=2] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=1] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #10  id=2026-04-05T07:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #11  id=2026-04-05T07:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=97.5% edge=+0.0% ev=0] Will Darren Bailey be the Republican nominee for Governor in Illinois?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=57.5% edge=+0.0% ev=0] Will the S&P 500 be above 6845.5 on Dec 31, 2026 at 4pm EST?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #12  id=2026-04-05T08:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #13  id=2026-04-05T08:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #14  id=2026-04-05T08:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #15  id=2026-04-05T08:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #16  id=2026-04-05T09:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #17  id=2026-04-05T09:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #18  id=2026-04-05T09:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #19  id=2026-04-05T09:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #20  id=2026-04-05T10:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #21  id=2026-04-05T10:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #22  id=2026-04-05T10:30:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Stephen A. Smith be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=4.5% edge=+0.0% ev=0] Will the New York win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will Jon Stewart be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #23  id=2026-04-05T10:45:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=86.5% edge=+0.0% ev=0] Will Aubry Bracco win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=38.5% edge=+0.0% ev=0] Will the Oklahoma City win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Minnesota win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=8.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by May 1, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=1.5% edge=+0.0% ev=0] Will Cory Booker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=5.5% edge=+0.0% ev=0] Will Jon Ossoff be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=9.5% edge=+0.0% ev=0] Will Real Madrid win the Champions League Winner?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Donald J. Trump be the nominee for the Presidency for the Republi
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=8.5% edge=+0.0% ev=0] Will the Denver win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=45.5% edge=+0.0% ev=0] Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=37.5% edge=+0.0% ev=0] Will the US agree to a new Iranian nuclear deal this year?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=95.5% edge=+0.0% ev=0] Will Democratic win the House race for TX-07?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=48.5% edge=+0.0% ev=0] How high will unemployment get before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #24  id=2026-04-05T11:00:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=2.5% edge=+0.0% ev=0] Will Rahm Emanuel be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=3.5% edge=+0.0% ev=0] Will James Talarico be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   3. [p=3.5% edge=+0.0% ev=0] Will Andy Beshear be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=1.5% edge=+0.0% ev=0] Will Bitcoin be above $100000 by April 1st, 2026 at 12:00AM ET?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=2.5% edge=+0.0% ev=0] Will the Los Angeles L win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=6.5% edge=+0.0% ev=0] Will Kamala Harris be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=1.5% edge=+0.0% ev=0] Will Michelle Obama be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=14.5% edge=+0.0% ev=0] Will the Boston win the 2026 Pro Basketball Finals?
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=4.5% edge=+0.0% ev=0] Will J.B. Pritzker be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=1.5% edge=+0.0% ev=0] Will Zohran Mamdani be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=9.5% edge=+0.0% ev=0] Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=8.5% edge=+0.0% ev=0] Will Alexandria Ocasio-Cortez be the Democratic Presidential nominee i
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=3.5% edge=+0.0% ev=0] Will Mark Kelly be the Democratic Presidential nominee in 2028?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=5.5% edge=+0.0% ev=0] Will Cirie Fields win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=1.5% edge=+0.0% ev=0] Will Christian Hubicki win Survivor Season 50?
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=13.5% edge=+0.0% ev=0] Donald Trump out before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=42.5% edge=+0.0% ev=0] Will Democratics win the Senate race in Texas?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
+
+============================================================
+Tick #1  id=2026-04-05T21:15:00+00:00
+Cash=$10,000  Equity=$10,000  PnL=$+0
+────────────────────────────────────────────────────────────
+Selected markets:
+   1. [p=85.2% edge=+0.0% ev=0] More tech layoffs in 2026 than in 2025?
+       → SKIP: edge 0.0% < min 0.2%
+   2. [p=23.0% edge=+0.1% ev=0] Will the number of unemployment rate exceeds 10% (monthly BLS); S&P 50
+       → SKIP: edge 0.1% < min 0.2%
+   3. [p=6.5% edge=+0.0% ev=0] Will Tucker Carlson be the nominee for the Presidency for the Republic
+       → SKIP: edge 0.0% < min 0.2%
+   4. [p=10.5% edge=+0.0% ev=0] Will "SAVE Act" (H.R. 22) becomes law before Jan 4, 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   5. [p=17.5% edge=+0.0% ev=0] Will the U.S. confirm that aliens exist before 2027?
+       → SKIP: edge 0.0% < min 0.2%
+   6. [p=2.5% edge=+0.0% ev=0] Will Judy Shelton be confirmed as chair of the Board of Governors of t
+       → SKIP: edge 0.0% < min 0.2%
+   7. [p=15.5% edge=+0.0% ev=0] Will Republicans win the House in 2026?
+       → SKIP: edge 0.0% < min 0.2%
+   8. [p=97.5% edge=+0.0% ev=0] Will the US government be shut down for at least 35 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+   9. [p=25.5% edge=+0.0% ev=0] Will the United States recognize Reza Pahlavi as the leader of Iran in
+       → SKIP: edge 0.0% < min 0.2%
+  10. [p=37.5% edge=+0.0% ev=0] Will J.D. Vance be the nominee for the Presidency for the Republican p
+       → SKIP: edge 0.0% < min 0.2%
+  11. [p=49.5% edge=+0.0% ev=0] Will Democrats win the U.S. Senate in 2026?
+       → SKIP: edge 0.0% < min 0.2%
+  12. [p=50.5% edge=+0.0% ev=0] Will Republicans win the U.S. Senate in 2026?
+       → SKIP: edge 0.0% < min 0.2%
+  13. [p=31.5% edge=+0.0% ev=0] Will there be a recession in 2026?
+       → SKIP: edge 0.0% < min 0.2%
+  14. [p=26.5% edge=+0.0% ev=0] Will Marco Rubio be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  15. [p=9.5% edge=+0.0% ev=0] Will Man City win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  16. [p=17.5% edge=+0.0% ev=0] Who will be the next the head of state or government of Iran?
+       → SKIP: edge 0.0% < min 0.2%
+  17. [p=37.5% edge=+0.0% ev=0] Will Benjamin Netanyahu leave Prime Minister of Israel before Jan 1, 2
+       → SKIP: edge 0.0% < min 0.2%
+  18. [p=1.5% edge=+0.0% ev=0] Will Josh Hawley be the nominee for the Presidency for the Republican 
+       → SKIP: edge 0.0% < min 0.2%
+  19. [p=88.5% edge=+0.0% ev=0] Will Arsenal win the English Premier League?
+       → SKIP: edge 0.0% < min 0.2%
+  20. [p=24.5% edge=+0.0% ev=0] Will the US government be shut down for at least 90 days between Feb 7
+       → SKIP: edge 0.0% < min 0.2%
+────────────────────────────────────────────────────────────
+No trades executed this tick.
