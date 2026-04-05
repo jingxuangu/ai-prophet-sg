@@ -1,11 +1,11 @@
 """
 Custom Prophet Arena Trading Agent v2
-改进点：
-1. 智能筛选：过滤极端价格，按 spread 排序找不确定性最高的市场
-2. LLM 生成搜索词：不再用原始 question 当 query
-3. p_yes 收缩：把 LLM 估计往市场价格方向拉，降低过度自信的风险
-4. 错误恢复：OpenAI 调用自带重试
-5. 跨 tick 记忆：把上一轮的决策和结果喂给 LLM
+Improvements:
+1. Smart filtering: remove extreme-price markets and rank by spread to find the most uncertain ones
+2. LLM-generated search queries: no longer use the raw question as the query
+3. p_yes shrinkage: pull the LLM estimate back toward the market price to reduce overconfidence
+4. Error recovery: OpenAI calls include built-in retries
+5. Cross-tick memory: feed the previous tick's decisions and outcomes back to the LLM
 """
 
 import json
@@ -22,7 +22,7 @@ from ai_prophet_core.client import ServerAPIClient, TradeIntentRequest
 
 load_dotenv()
 
-# ── 配置 ──────────────────────────────────────────────────────────────────────
+# ── Configuration ─────────────────────────────────────────────────────────────
 
 PA_API_URL  = "https://ai-prophet-core-api-998105805337.us-central1.run.app"
 PA_API_KEY  = os.environ["PA_SERVER_API_KEY"]
@@ -37,10 +37,10 @@ MAX_PER_MARKET        = 1_000.0
 MIN_EDGE              = 0.03
 MIN_BET               = 20.0
 KELLY_FRACTION        = 0.25
-SHRINKAGE             = 0   # [新增] p_yes 收缩系数：0=完全信LLM，1=完全信市场
+SHRINKAGE             = 0   # [New] p_yes shrinkage factor: 0 = trust LLM fully, 1 = trust market fully
 LOG_FILE              = "tick_log.jsonl"
 
-# ── 日志 ──────────────────────────────────────────────────────────────────────
+# ── Logging ───────────────────────────────────────────────────────────────────
 
 logging.basicConfig(
     level=logging.INFO,
@@ -58,10 +58,10 @@ def write_tick_log(record: dict) -> None:
 openai_client = OpenAI(api_key=OPENAI_KEY)
 
 
-# ── [改进 4] 带重试的 OpenAI 调用 ─────────────────────────────────────────────
+# ── [Improvement 4] Retried OpenAI Calls ─────────────────────────────────────
 
 def call_openai(prompt: str, max_retries: int = 3, **kwargs) -> dict:
-    """调用 OpenAI，失败时指数退避重试。返回解析后的 JSON dict。"""
+    """Call OpenAI with exponential-backoff retries and return parsed JSON."""
     for attempt in range(max_retries):
         try:
             response = openai_client.chat.completions.create(
@@ -82,10 +82,10 @@ def call_openai(prompt: str, max_retries: int = 3, **kwargs) -> dict:
                 raise
 
 
-# ── 新闻搜索 ──────────────────────────────────────────────────────────────────
+# ── News Search ───────────────────────────────────────────────────────────────
 
 def search_news(query: str, num_results: int = 5) -> str:
-    """用 Brave Search 搜索最新新闻，返回摘要文本。"""
+    """Search recent news with Brave Search and return summary text."""
     if not BRAVE_KEY:
         return ""
     query = query[:200]
@@ -115,10 +115,10 @@ def search_news(query: str, num_results: int = 5) -> str:
         return ""
 
 
-# ── [改进 2] LLM 生成搜索词 ──────────────────────────────────────────────────
+# ── [Improvement 2] LLM Search Query Generation ───────────────────────────────
 
 def generate_search_queries(question: str) -> list[str]:
-    """让 LLM 把市场问题转成 2-3 个精准搜索词，比直接用问题原文效果好得多。"""
+    """Use the LLM to turn a market question into 2-3 focused search queries."""
     prompt = f"""Convert this prediction market question into 2-3 short web search queries
 that would find the most relevant recent news.
 
@@ -130,7 +130,7 @@ Respond with ONLY a JSON object:
     try:
         result = call_openai(prompt, max_tokens=100)
         queries = result.get("queries", [])
-        # 兜底：如果 LLM 返回空或格式异常，用原始问题
+        # Fallback: if the LLM returns nothing or malformed output, use the raw question
         if not queries or not isinstance(queries, list):
             return [question[:200]]
         return [q[:200] for q in queries[:3]]
@@ -139,21 +139,21 @@ Respond with ONLY a JSON object:
         return [question[:200]]
 
 
-# ── LLM 预测 ──────────────────────────────────────────────────────────────────
+# ── LLM Forecasting ───────────────────────────────────────────────────────────
 
 def predict_market(market, memory_text: str = "") -> tuple[float, str, str]:
     """
-    用 GPT-4o 预测市场的 p_yes。
-    [改进 3] 返回的 p_yes 会被收缩（shrink）向市场价格靠拢。
-    [改进 5] 接收跨 tick 记忆文本。
+    Forecast p_yes for a market with GPT-4o.
+    [Improvement 3] The returned p_yes is shrunk toward the market price.
+    [Improvement 5] Accepts cross-tick memory text.
     """
     question   = market.question
     yes_ask    = float(market.quote.best_ask)
     no_ask     = 1.0 - float(market.quote.best_bid)
-    mid_price  = (yes_ask + (1.0 - no_ask)) / 2  # 市场中间价
+    mid_price  = (yes_ask + (1.0 - no_ask)) / 2  # Market mid-price
     resolution = market.resolution_time.strftime("%Y-%m-%d")
 
-    # [改进 2] 用 LLM 生成的搜索词搜索，而不是原始问题
+    # [Improvement 2] Search with LLM-generated queries instead of the raw question
     queries = generate_search_queries(question)
     all_news = []
     for q in queries:
@@ -162,7 +162,7 @@ def predict_market(market, memory_text: str = "") -> tuple[float, str, str]:
             all_news.append(f"[Query: {q}]\n{result}")
     news_block = "\nRecent news:\n" + "\n\n".join(all_news) if all_news else "\n(No recent news found)"
 
-    # [改进 5] 跨 tick 记忆
+    # [Improvement 5] Cross-tick memory
     memory_block = f"\n\nYour notes from previous ticks:\n{memory_text}" if memory_text else ""
 
     prompt = f"""You are a calibrated forecaster for prediction markets.
@@ -186,8 +186,8 @@ Respond with ONLY a JSON object:
     raw_p_yes = max(0.01, min(0.99, float(raw["p_yes"])))
     rationale = raw.get("rationale", "")
 
-    # [改进 3] p_yes 收缩：把 LLM 估计往市场价格拉
-    # adjusted = (1 - SHRINKAGE) * LLM估计 + SHRINKAGE * 市场价格
+    # [Improvement 3] Shrink p_yes toward the market price
+    # adjusted = (1 - SHRINKAGE) * LLM_estimate + SHRINKAGE * market_price
     adjusted_p_yes = (1.0 - SHRINKAGE) * raw_p_yes + SHRINKAGE * mid_price
 
     logger.info(
@@ -198,10 +198,10 @@ Respond with ONLY a JSON object:
     return adjusted_p_yes, rationale, "\n\n".join(all_news)
 
 
-# ── 仓位计算 ──────────────────────────────────────────────────────────────────
+# ── Position Sizing ───────────────────────────────────────────────────────────
 
 def kelly_size(p_yes: float, yes_ask: float, no_ask: float, cash: float) -> tuple[str, float]:
-    """Kelly Criterion 仓位计算（无改动）。"""
+    """Kelly Criterion position sizing (unchanged)."""
     yes_edge = p_yes - yes_ask
     no_edge  = (1.0 - p_yes) - no_ask
 
@@ -224,14 +224,14 @@ def kelly_size(p_yes: float, yes_ask: float, no_ask: float, cash: float) -> tupl
     return side, amount
 
 
-# ── [改进 1] 智能市场筛选 ─────────────────────────────────────────────────────
+# ── [Improvement 1] Smart Market Selection ────────────────────────────────────
 
 def select_top_markets(markets: list, n: int = TOP_N_MARKETS) -> list:
     """
-    智能筛选：
-    1. 过滤极端价格（<0.10 或 >0.90）——这些市场接近确定，赚头有限
-    2. 过滤零交易量——没有流动性的市场不可信
-    3. 按 spread（ask - bid）降序排序——spread 大 = 市场定价不确定 = 可能有机会
+    Smart filtering:
+    1. Remove extreme-price markets (<0.10 or >0.90) because they are close to certain
+    2. Remove zero-volume markets because they lack reliable liquidity
+    3. Sort by spread (ask - bid) descending, since wider spreads may indicate pricing uncertainty
     """
     filtered = []
     for m in markets:
@@ -239,16 +239,16 @@ def select_top_markets(markets: list, n: int = TOP_N_MARKETS) -> list:
         yes_bid = float(m.quote.best_bid)
         volume  = float(m.quote.volume_24h or 0)
 
-        # 排除极端价格
+        # Exclude extreme prices
         if yes_ask < 0.10 or yes_ask > 0.90:
             continue
-        # 排除无流动性
+        # Exclude illiquid markets
         if volume <= 0:
             continue
 
         filtered.append(m)
 
-    # 按 spread 降序排序：spread 大 = 定价不确定性高 = 可能有 edge
+    # Sort by spread descending: wider spread = more pricing uncertainty = possible edge
     filtered.sort(
         key=lambda m: float(m.quote.best_ask) - float(m.quote.best_bid),
         reverse=True,
@@ -260,10 +260,10 @@ def select_top_markets(markets: list, n: int = TOP_N_MARKETS) -> list:
     return filtered[:n]
 
 
-# ── [改进 5] 跨 tick 记忆管理 ─────────────────────────────────────────────────
+# ── [Improvement 5] Cross-Tick Memory Management ──────────────────────────────
 
 def build_memory_text(prev_record: dict | None) -> str:
-    """把上一个 tick 的关键信息压缩成几行文本，塞进下一个 tick 的 prompt。"""
+    """Compress key information from the previous tick into prompt-ready text."""
     if not prev_record:
         return ""
 
@@ -295,7 +295,7 @@ def build_memory_text(prev_record: dict | None) -> str:
     return "\n".join(lines)
 
 
-# ── 主循环 ────────────────────────────────────────────────────────────────────
+# ── Main Loop ─────────────────────────────────────────────────────────────────
 
 def run():
     api = ServerAPIClient(base_url=PA_API_URL, api_key=PA_API_KEY)
@@ -331,7 +331,7 @@ def run():
 
     lease_owner = str(uuid.uuid4())
     tick_count  = 0
-    prev_tick_record: dict | None = None  # [改进 5] 上一个 tick 的记录
+    prev_tick_record: dict | None = None  # [Improvement 5] Previous tick record
 
     while True:
         claim = api.claim_tick(experiment_id, lease_owner)
@@ -361,9 +361,9 @@ def run():
                 )
 
             candidates  = api.get_candidates(claim.tick_ts, snapshot_id)
-            top_markets = select_top_markets(candidates.markets)  # [改进 1]
+            top_markets = select_top_markets(candidates.markets)  # [Improvement 1]
 
-            # [改进 5] 构建跨 tick 记忆
+            # [Improvement 5] Build cross-tick memory
             memory_text = build_memory_text(prev_tick_record)
             if memory_text:
                 logger.info(f"Memory from previous tick: {len(memory_text)} chars")
@@ -418,7 +418,7 @@ def run():
                 }
 
                 try:
-                    # [改进 2+3+4+5] 改进后的预测：LLM搜索词、收缩、重试、记忆
+                    # [Improvements 2+3+4+5] Search-query generation, shrinkage, retries, and memory
                     p_yes, rationale, news_found = predict_market(market, memory_text=memory_text)
                     market_log["news"] = news_found
                     side, amount     = kelly_size(p_yes, yes_ask, no_ask, cash)
@@ -472,7 +472,7 @@ def run():
 
                 tick_record["analyzed"].append(market_log)
 
-            # 提交交易
+            # Submit trades
             if intents:
                 result = api.submit_trade_intents(
                     experiment_id, participant_idx, tick_id,
@@ -496,7 +496,7 @@ def run():
 
             write_tick_log(tick_record)
 
-            # [改进 5] 保存当前 tick 记录，下个 tick 用
+            # [Improvement 5] Save the current tick record for the next tick
             prev_tick_record = tick_record
 
             api.finalize_participant(

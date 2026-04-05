@@ -1,12 +1,12 @@
 """
 Custom Prophet Arena Trading Agent v3
 
-v3 目标：
-1. 更保守：市场价作为底座，LLM 只做小幅修正
-2. 过滤不适合新闻驱动的市场
-3. 避免旧闻/错配新闻污染
-4. 固定分层仓位，先验证信号质量
-5. 保留原有整体框架，尽量少改结构
+v3 goals:
+1. Be more conservative: use the market price as the base and let the LLM make only modest adjustments
+2. Filter out markets that are not well suited for a news-driven strategy
+3. Avoid contamination from stale or mismatched news
+4. Use fixed tiered sizing to validate signal quality first
+5. Preserve the overall framework with minimal structural changes
 """
 
 import json
@@ -24,7 +24,7 @@ from ai_prophet_core.client import ServerAPIClient, TradeIntentRequest
 
 load_dotenv()
 
-# ── 配置 ──────────────────────────────────────────────────────────────────────
+# ── Configuration ─────────────────────────────────────────────────────────────
 
 PA_API_URL  = "https://ai-prophet-core-api-998105805337.us-central1.run.app"
 PA_API_KEY  = os.environ["PA_SERVER_API_KEY"]
@@ -40,7 +40,7 @@ MIN_EDGE              = 0.01
 MIN_BET               = 20.0
 MAX_PER_MARKET        = 150.0
 SHRINKAGE             = 0.0
-MAX_DELTA_FROM_MID    = 0.08   # LLM 相对市场最多偏离 8 个点
+MAX_DELTA_FROM_MID    = 0.08   # LLM can deviate from the market by at most 8 percentage points
 LOG_FILE              = "tick_log.jsonl"
 BRIEF_LOG_FILE        = "brief_log.txt"
 
@@ -53,7 +53,7 @@ logger = logging.getLogger(__name__)
 openai_client = OpenAI(api_key=OPENAI_KEY)
 
 
-# ── 日志 ──────────────────────────────────────────────────────────────────────
+# ── Logging ───────────────────────────────────────────────────────────────────
 
 def write_tick_log(record: dict) -> None:
     with open(LOG_FILE, "a", encoding="utf-8") as f:
@@ -99,7 +99,7 @@ def write_brief_log(record: dict) -> None:
     logger.info(f"Brief log written → {BRIEF_LOG_FILE}")
 
 
-# ── OpenAI 调用 ───────────────────────────────────────────────────────────────
+# ── OpenAI Calls ──────────────────────────────────────────────────────────────
 
 def call_openai(prompt: str, max_retries: int = 3, **kwargs) -> dict:
     kwargs.setdefault("max_tokens", 200)
@@ -125,7 +125,7 @@ def call_openai(prompt: str, max_retries: int = 3, **kwargs) -> dict:
                 raise
 
 
-# ── 新闻搜索 ──────────────────────────────────────────────────────────────────
+# ── News Search ───────────────────────────────────────────────────────────────
 
 def search_news(query: str, num_results: int = 5) -> str:
     if not BRAVE_KEY:
@@ -167,23 +167,23 @@ def search_news(query: str, num_results: int = 5) -> str:
         return ""
 
 
-# ── 市场过滤 ──────────────────────────────────────────────────────────────────
+# ── Market Filtering ──────────────────────────────────────────────────────────
 
 
 def classify_market_priority(question: str) -> tuple[bool, int]:
     """
-    返回:
-    - 是否纳入新闻驱动池
-    - 优先级分数（越高越优先）
+    Returns:
+    - Whether the market should enter the news-driven pool
+    - A priority score, where higher means more preferred
 
-    目标：
-    1. 明确事件盘优先
-    2. 长期价格阈值盘降权
-    3. 低成交量只是次级排序，不是核心
+    Goals:
+    1. Prioritize explicit event-driven markets
+    2. Downweight long-horizon price-threshold markets
+    3. Treat low volume as a secondary ranking factor rather than the core signal
     """
     q = question.lower().strip()
 
-    # 明显不适合当前新闻框架的
+    # Clearly unsuitable for the current news-driven framework
     hard_exclude = [
         "who will win",
         "who will attend",
@@ -206,7 +206,7 @@ def classify_market_priority(question: str) -> tuple[bool, int]:
 
     score = 0
 
-    # A档：最适合新闻驱动的明确事件盘
+    # Tier A: explicit event markets best suited for news-driven trading
     strong_event_markers = [
         "leave office",
         "leave prime minister",
@@ -227,7 +227,7 @@ def classify_market_priority(question: str) -> tuple[bool, int]:
         if marker in q:
             score += 6
 
-    # B档：中等适合
+    # Tier B: moderately suitable markets
     medium_event_markers = [
         "cut rates",
         "be the head of state",
@@ -244,7 +244,7 @@ def classify_market_priority(question: str) -> tuple[bool, int]:
         if marker in q:
             score += 3
 
-    # C档：长期价格/阈值盘，降权但不完全排除
+    # Tier C: long-horizon price/threshold markets, downweighted but not fully excluded
     weak_markers = [
         "reach above",
         "reach below",
@@ -258,7 +258,7 @@ def classify_market_priority(question: str) -> tuple[bool, int]:
         if marker in q:
             score -= 4
 
-    # 基础分
+    # Base score
     if q.startswith("will "):
         score += 1
 
@@ -289,7 +289,7 @@ def select_top_markets(markets: list, n: int = TOP_N_MARKETS) -> list:
 
         ranked.append((priority, vol, m))
 
-    # 先按事件优先级排，再按低成交量排
+    # Sort first by event priority, then by lower trading volume
     ranked.sort(key=lambda x: (-x[0], x[1]))
 
     selected = [m for _, _, m in ranked[:n]]
@@ -319,7 +319,7 @@ def load_traded_market_ids() -> set[str]:
 
 
 
-# ── 搜索词生成 ────────────────────────────────────────────────────────────────
+# ── Search Query Generation ───────────────────────────────────────────────────
 
 def generate_search_queries(question: str, resolution_year: int) -> list[str]:
     prompt = f"""Convert this prediction market question into 2 short RECENT-news web search queries.
@@ -346,7 +346,7 @@ Respond with ONLY a JSON object:
         return [question[:200]]
 
 
-# ── 概率预测 ──────────────────────────────────────────────────────────────────
+# ── Probability Forecasting ───────────────────────────────────────────────────
 
 def clamp_probability_around_mid(raw_p: float, mid_price: float, max_delta: float) -> float:
     lower = max(0.01, mid_price - max_delta)
@@ -356,17 +356,17 @@ def clamp_probability_around_mid(raw_p: float, mid_price: float, max_delta: floa
 
 def predict_market(market, memory_text: str = "") -> tuple[float, str, str, int]:
     """
-    返回:
+    Returns:
     - adjusted_p_yes
     - rationale
     - news_text
-    - evidence_score (0~3)
+    - evidence_score (0-3)
 
     evidence_score:
-    0 = 无直接证据 / 纯背景
-    1 = 弱相关近期信息
-    2 = 明确且较直接的近期证据
-    3 = 强直接证据，接近决定性
+    0 = no direct evidence / pure background
+    1 = weak but relevant recent information
+    2 = clear and fairly direct recent evidence
+    3 = strong direct evidence, close to decisive
     """
     question      = market.question
     yes_ask       = float(market.quote.best_ask)
@@ -424,19 +424,19 @@ Respond with ONLY a JSON object:
     evidence_score = int(raw.get("evidence_score", 0))
     evidence_score = max(0, min(3, evidence_score))
 
-    # 先做全局 clamp，防止模型离市场太远
+    # First apply a global clamp so the model cannot drift too far from the market
     raw_p_yes = clamp_probability_around_mid(
         raw_p_yes,
         mid_price,
         MAX_DELTA_FROM_MID,
     )
 
-    # 再按证据强度限制最大偏离
+    # Then cap the maximum deviation based on evidence strength
     evidence_delta_cap = {
-        0: 0.01,   # 几乎贴市场
-        1: 0.03,   # 弱证据，小修正
-        2: 0.06,   # 中等证据，中等修正
-        3: 0.10,   # 强证据，允许较大修正
+        0: 0.01,   # Almost pinned to the market
+        1: 0.03,   # Weak evidence, only a small adjustment
+        2: 0.06,   # Medium evidence, a moderate adjustment
+        3: 0.10,   # Strong evidence, allow a larger adjustment
     }[evidence_score]
 
     raw_p_yes = clamp_probability_around_mid(
@@ -445,7 +445,7 @@ Respond with ONLY a JSON object:
         evidence_delta_cap,
     )
 
-    # 最后再做 shrinkage
+    # Finally apply shrinkage
     adjusted_p_yes = (1.0 - SHRINKAGE) * raw_p_yes + SHRINKAGE * mid_price
 
     logger.info(
@@ -456,7 +456,7 @@ Respond with ONLY a JSON object:
     return adjusted_p_yes, rationale, "\n\n".join(all_news), evidence_score
 
 
-# ── 仓位 ──────────────────────────────────────────────────────────────────────
+# ── Position Sizing ───────────────────────────────────────────────────────────
 
 def compute_edge_and_side(p_yes: float, yes_ask: float, no_ask: float) -> tuple[str, float]:
     yes_edge = p_yes - yes_ask
@@ -481,7 +481,7 @@ def fixed_size_from_edge(edge: float) -> float:
         return min(150.0, MAX_PER_MARKET)
 
 
-# ── 跨 tick 记忆 ──────────────────────────────────────────────────────────────
+# ── Cross-Tick Memory ─────────────────────────────────────────────────────────
 
 def build_memory_text(prev_record: Optional[dict]) -> str:
     if not prev_record:
@@ -515,7 +515,7 @@ def build_memory_text(prev_record: Optional[dict]) -> str:
     return "\n".join(lines)
 
 
-# ── 主循环 ────────────────────────────────────────────────────────────────────
+# ── Main Loop ─────────────────────────────────────────────────────────────────
 
 def run():
     api = ServerAPIClient(base_url=PA_API_URL, api_key=PA_API_KEY)

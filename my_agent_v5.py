@@ -1,11 +1,11 @@
 """
 Custom Prophet Arena Trading Agent v5
 
-v5 改动：
-A. 过滤策略改为黑名单（扩大候选池）
-B. 修复 clamp 死区（evidence_score=0 允许 ±3%）
-C. 两阶段市场筛选（批量 LLM 初筛 + 深度分析）
-D. 连续 SKIP 触发冷却
+v5 changes:
+A. Switched the filter strategy to a blacklist to enlarge the candidate pool
+B. Fixed the clamp dead zone so evidence_score = 0 still allows +/-3%
+C. Added two-stage market screening (batch LLM pre-screen + deep analysis)
+D. Trigger cooldown after consecutive skips
 """
 
 import json
@@ -23,7 +23,7 @@ from ai_prophet_core.client import ServerAPIClient, TradeIntentRequest
 
 load_dotenv()
 
-# ── 配置 ──────────────────────────────────────────────────────────────────────
+# ── Configuration ─────────────────────────────────────────────────────────────
 
 PA_API_URL            = "https://ai-prophet-core-api-998105805337.us-central1.run.app"
 PA_API_KEY            = os.environ["PA_SERVER_API_KEY"]
@@ -69,7 +69,7 @@ logger = logging.getLogger(__name__)
 openai_client = OpenAI(api_key=OPENAI_KEY)
 
 
-# ── 工具函数 ──────────────────────────────────────────────────────────────────
+# ── Utility Functions ─────────────────────────────────────────────────────────
 
 def call_openai(prompt: str, max_retries: int = 3, **kwargs) -> dict:
     kwargs.setdefault("max_tokens", 200)
@@ -151,7 +151,7 @@ def write_brief_log(record: dict) -> None:
         f.write("\n".join(lines) + "\n")
 
 
-# ── 持久化：已交易 ID + Cooldown ─────────────────────────────────────────────
+# ── Persistence: Traded IDs + Cooldown ───────────────────────────────────────
 
 def _load_json(path, default):
     if not os.path.exists(path):
@@ -201,17 +201,17 @@ def update_cooldown(state: dict, mid: str, was_skipped: bool, tick: int):
     state[mid] = info
 
 
-# ── A. 黑名单过滤 ────────────────────────────────────────────────────────────
+# ── A. Blacklist Filtering ────────────────────────────────────────────────────
 
 def passes_blacklist(question: str) -> bool:
     q = question.lower()
     return not any(p in q for p in BLACKLIST)
 
 
-# ── C. 两阶段筛选 ────────────────────────────────────────────────────────────
+# ── C. Two-Stage Filtering ────────────────────────────────────────────────────
 
 def build_candidate_pool(markets, cooldown_state, tick_count):
-    """第一阶段：黑名单 + 价格范围 + cooldown"""
+    """Stage 1: blacklist + price range + cooldown."""
     pool = []
     excluded_cd = 0
     for m in markets:
@@ -231,11 +231,11 @@ def build_candidate_pool(markets, cooldown_state, tick_count):
 
 
 def batch_screen_markets(pool, n=SCREEN_N_MARKETS, tick_ts=""):
-    """第二阶段：LLM 批量快速初筛，选出最可能有近期新闻影响的 n 个市场"""
+    """Stage 2: batch LLM pre-screening to pick the n markets most likely affected by recent news."""
     if len(pool) <= n:
         return pool
 
-    # 按 spread 排序截断，控制 prompt token
+    # Truncate by spread to keep prompt size under control
     def spread(m):
         return float(m.quote.best_ask) - float(m.quote.best_bid)
     pool_sorted = sorted(pool, key=spread)[:BATCH_SCREEN_CAP]
@@ -289,7 +289,7 @@ Respond with ONLY:
         return sorted(pool_sorted, key=lambda m: float(m.quote.volume_24h or 0), reverse=True)[:n]
 
 
-# ── 搜索词生成 ────────────────────────────────────────────────────────────────
+# ── Search Query Generation ───────────────────────────────────────────────────
 
 def generate_search_queries(question: str, resolution_year: int) -> list[str]:
     prompt = f"""Convert this prediction market question into 2 short RECENT-news web search queries.
@@ -316,7 +316,7 @@ Respond with ONLY a JSON object:
         return [question[:200]]
 
 
-# ── 概率预测（核心模型）─────────────────────────────────────────────────────
+# ── Probability Forecasting (Core Model) ─────────────────────────────────────
 
 def clamp_around_mid(raw_p: float, mid: float, max_delta: float) -> float:
     lower = max(0.01, mid - max_delta)
@@ -326,8 +326,8 @@ def clamp_around_mid(raw_p: float, mid: float, max_delta: float) -> float:
 
 def predict_market(market, memory_text: str = "") -> tuple[float, str, str, int]:
     """
-    返回: (adjusted_p_yes, rationale, news_text, evidence_score)
-    evidence_score: 0=无证据, 1=弱, 2=中, 3=强
+    Returns: (adjusted_p_yes, rationale, news_text, evidence_score)
+    evidence_score: 0 = none, 1 = weak, 2 = medium, 3 = strong
     """
     question   = market.question
     yes_ask    = float(market.quote.best_ask)
@@ -384,10 +384,10 @@ Respond with ONLY a JSON object:
     rationale = raw.get("rationale", "")
     ev_score = max(0, min(3, int(raw.get("evidence_score", 0))))
 
-    # 全局 clamp
+    # Global clamp
     raw_p = clamp_around_mid(raw_p, mid_price, MAX_DELTA_FROM_MID)
 
-    # B. 按证据强度 clamp（score=0 → ±3%，修复死区）
+    # B. Clamp by evidence strength (score = 0 -> +/-3%, fixing the dead zone)
     ev_cap = {0: 0.03, 1: 0.04, 2: 0.06, 3: 0.10}[ev_score]
     raw_p = clamp_around_mid(raw_p, mid_price, ev_cap)
 
@@ -399,7 +399,7 @@ Respond with ONLY a JSON object:
     return adjusted, rationale, "\n\n".join(all_news), ev_score
 
 
-# ── 仓位计算 ──────────────────────────────────────────────────────────────────
+# ── Position Sizing ───────────────────────────────────────────────────────────
 
 def compute_edge_and_side(p_yes, yes_ask, no_ask):
     yes_edge = p_yes - yes_ask
@@ -420,7 +420,7 @@ def fixed_size_from_edge(edge):
         return min(150.0, MAX_PER_MARKET)
 
 
-# ── 跨 tick 记忆 ──────────────────────────────────────────────────────────────
+# ── Cross-Tick Memory ─────────────────────────────────────────────────────────
 
 def build_memory_text(prev_record: Optional[dict]) -> str:
     if not prev_record:
@@ -448,7 +448,7 @@ def build_memory_text(prev_record: Optional[dict]) -> str:
     return "\n".join(lines)
 
 
-# ── 主循环 ────────────────────────────────────────────────────────────────────
+# ── Main Loop ─────────────────────────────────────────────────────────────────
 
 def run():
     # --- Setup (once) ---
@@ -568,7 +568,7 @@ def run():
                         f"size=${amount:.0f} | {rationale}"
                     )
 
-                    # 判断是否交易
+                    # Decide whether to trade
                     if edge < MIN_EDGE:
                         market_log["decision"] = f"SKIP: edge {edge:.1%} < min {MIN_EDGE:.1%}"
                         update_cooldown(cooldown_state, market_id, True, tick_count)
